@@ -8,7 +8,16 @@
 </head>
 <body>
 
+  <div id ="navigationbar">
+    <%= link_to("Home", root_path) %>
+    <%= link_to("Teams", :controller => 'pages', :action => 'teams') %>
+    <%= link_to("Mentors", :controller => 'pages', :action => 'mentors') %>
+    <%= link_to("Sponsors", :controller => 'pages', :action => 'sponsors') %>
+  </div>
+
 <%= yield %>
+
+<%= render "shared/footer" %>
 
 </body>
 </html>
