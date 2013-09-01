@@ -6,17 +6,15 @@ $light-grey: #a0a0a1;
   text-align: center;
   letter-spacing: -1.75px;
   font-size: 40px;
-  font-family: "impact";  
+  font-family: "impact";
   color: $light-grey;
   background-color: $dark-grey;
-}
-
-.attributes:hover {
-  background-color: $light-grey;		 
+  border: 1px solid green;
 }
 
 .attribute:hover {
-  opacity: 0.5;
+  position:relative;		 
+  top: -5px;
 }
 
 #middle {
@@ -63,25 +61,41 @@ $light-grey: #a0a0a1;
 
 .image {
   p {
+    height: 55px;
     background: $dark-grey;
     text-align: center;
-    padding: 10px;
-    visibility: hidden;
+    display: none;
     font-size: 20px;
     letter-spacing: 5px;
     font-family: "Georgia";
     color: white;
-    -webkit-transition: margin-left;
-    -webkit-transition-timing-function: ease-in;
-    -webkit-transition-duration: 250ms;
   }
 }
 
 .image:hover {
   opacity: 0.75;
   p {
-    visibility: visible;
+    display: block;
     position: relative;
     top: 0px;
   }
+  
+  #arrow {
+    display: none;
+  }
+}
+
+#arrow {
+ display: block;
+ height: 55px;
+ margin-left: auto;
+ margin-right: auto;
+ opacity: 0.75;
+}
+
+.upside-down {
+  -moz-transform: scaleY(-1);
+  -o-transform: scaleY(-1);
+  -webkit-transform: scaleY(-1);
+  transform: scaleY(-1);	   
 }
