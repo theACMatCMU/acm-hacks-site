@@ -1,4 +1,5 @@
 $dark-grey: #3b3c3d;
+$light-grey: #a0a0a1;
 $nav-link-color: $dark-grey;
 $reg-link-color: blue;
 
@@ -50,5 +51,8 @@ a {
 }
 
 footer {
+  background-color: $dark-grey;
+  color: $light-grey;
+  padding: 20px;
   text-align: right;
 }

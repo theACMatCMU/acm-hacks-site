@@ -58,13 +58,61 @@ $light-grey: #a0a0a1;
   }
 }
 
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-20px);
+  }
+			       
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
+}
+
+@-moz-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-20px);
+  }
+			       
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
+}
+
+@-o-keyframes fadeInDown {
+  0% {
+   opacity: 0;
+    -o-transform: translateY(-20px);
+  }
+			  
+  100% {
+   opacity: 1;
+   -o-transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-20px);
+  }
+			       
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
+}
+
 .image {
   p {
-    height: 55px;
+    display: none;
     background: $dark-grey;
     text-align: center;
-    display: none;
     font-size: 20px;
+
     letter-spacing: 5px;
     font-family: "Georgia";
     color: white;
@@ -74,19 +122,14 @@ $light-grey: #a0a0a1;
 .image:hover {
   opacity: 0.75;
   p {
-    display: block;
     position: relative;
     top: 0px;
-  }
-  
-  #arrow {
-    display: none;
   }
 }
 
 #arrow {
  display: block;
- height: 55px;
+ width: 10%;
  margin-left: auto;
  margin-right: auto;
  opacity: 0.75;

@@ -1,8 +1,10 @@
 
 <div class="image">
-<%= image_tag("header.png", :id => "headerimage", :alt => "header", :style => "width: 100%;") %>
-<%= image_tag("arrow.png", :id => "arrow") %>
-<p>The hackathon, reinvented.</p>
+<%= image_tag("header.png", :id => "headerimage", :alt => "header", :style => "width: 100%;", :onclick => "openClose('leaveopen')") %>
+<br />
+<p id = "leaveopen" onclick = "openClose('leaveopen')"></br>The hackathon, reinvented.<br/><br /></p>
+<br />
+<%= image_tag("arrow.png", :id => "arrow", :onclick => "openClose('leaveopen')") %>
 </div>
 
 <article id = "row" tag ="bounce">
@@ -20,14 +22,16 @@
 
 <div class = "image">
 
-<p> "You provide the brains, we provide everything else"</p>
-<%= image_tag("arrow.png", :id => "arrow", :class => "upside-down") %>
-<%= image_tag("slogan.png", :alt => "slogan", :style => "width: 100%;") %>
+<%= image_tag("arrow.png", :id => "arrow", :class => "upside-down", :onclick => "openClose('leaveopen')") %>
+<br />
+<p id = "leaveopen2" onclick="openClose('leaveopen2')"><br />"You provide the brains, we provide everything else"<br /><br /></p>
+
+<%= image_tag("slogan.png", :alt => "slogan", :style => "width: 100%; border-top: 4px solid white;", :onclick => "openClose('leaveopen2')") %>
 </div>
 
 <div id = "attributes">
   <span class = "attribute"> Mentorship </span>
-  <span id = "middle" class = "attribute">| Resources | </span>
+  | <span id = "middle" class = "attribute">Resources </span> |
   <span class = "attribute"> Prizes </span>
 </div>
 

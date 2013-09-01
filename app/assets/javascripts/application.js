@@ -13,3 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
+
+function openClose(objname) {
+    $("#".concat(objname)).animate({height: "toggle", "opacity": "toggle"}, "slow");
+}
