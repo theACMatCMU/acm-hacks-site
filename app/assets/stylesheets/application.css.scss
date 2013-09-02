@@ -1,10 +1,13 @@
 $dark-grey: #3b3c3d;
 $light-grey: #a0a0a1;
+
 $nav-link-color: $dark-grey;
-$reg-link-color: blue;
+$reg-link-color: $light-grey;
+$hover-link-color: $light-grey;
 
 html {
    font-family: "Georgia";
+   min-width: 550px;
 }
 
 h1 {
@@ -27,7 +30,7 @@ h2 {
 }
 
 p {
-  margin: auto;
+  margin: auto auto;
   padding-left: 20px;
   padding-right: 10px;
   line-height: 150%;
@@ -38,6 +41,12 @@ p {
 a {
   text-decoration: none;
   color: $reg-link-color;
+}
+
+a:hover {
+  position: relative;
+  top: -5px;
+  color: $hover-link-color;
 }
 
 #nav {
