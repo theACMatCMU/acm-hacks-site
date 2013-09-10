@@ -1,9 +1,10 @@
 $dark-grey: #3b3c3d;
 $light-grey: #a0a0a1;
+$lighter-grey: #dadadc;
 
 $nav-link-color: $dark-grey;
 $reg-link-color: $light-grey;
-$hover-link-color: $light-grey;
+$hover-link-color: $lighter-grey;
 
 html {
    font-family: "Georgia";
@@ -47,6 +48,10 @@ a:hover {
   position: relative;
   top: -5px;
   color: $hover-link-color;
+}
+
+a:active {
+  color: $light-grey;
 }
 
 #nav {
