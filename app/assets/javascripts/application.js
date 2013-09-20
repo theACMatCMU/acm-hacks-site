@@ -17,3 +17,8 @@
 function openClose(objname) {
     $("#".concat(objname)).animate({height: "toggle", "opacity": "toggle"}, "slow");
 }
+
+// This is a workaround to chrome image caching issue
+function goToWebsite(url) {
+    window.location = url;
+}
