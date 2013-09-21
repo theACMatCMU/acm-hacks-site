@@ -5,6 +5,7 @@
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= stylesheet_link_tag    "home" %>
   <%= stylesheet_link_tag    "mentors" %>
+  <%= stylesheet_link_tag    "ideas" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
@@ -14,7 +15,8 @@
   <div id ="nav">
     <%= link_to("Home", root_path) %> |
     <%= link_to("Teams", :controller => 'pages', :action => 'teams') %> |
-    <%= link_to("Mentors", :controller => 'pages', :action => 'mentors') %>
+    <%= link_to("Mentors", :controller => 'pages', :action => 'mentors') %> |
+    <%= link_to("Idea Pool", :controller => 'pages', :action => 'ideas') %>
 <!--    <%= link_to("Sponsors", :controller => 'pages', :action => 'sponsors') %> -->
   </div>
   <br />

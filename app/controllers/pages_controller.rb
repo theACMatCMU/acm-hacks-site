@@ -10,4 +10,7 @@ class PagesController < ApplicationController
 
   def sponsors
   end
+
+  def ideas
+  end
 end
