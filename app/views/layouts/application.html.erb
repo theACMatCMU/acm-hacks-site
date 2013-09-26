@@ -6,6 +6,8 @@
   <%= stylesheet_link_tag    "home" %>
   <%= stylesheet_link_tag    "mentors" %>
   <%= stylesheet_link_tag    "ideas" %>
+  <%= stylesheet_link_tag    "schedule" %>
+  <%= stylesheet_link_tag    "sponsors" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
@@ -16,8 +18,10 @@
     <%= link_to("Home", root_path) %> |
     <%= link_to("Teams", :controller => 'pages', :action => 'teams') %> |
     <%= link_to("Mentors", :controller => 'pages', :action => 'mentors') %> |
+    <%= link_to("Sponsors", :controller => 'pages', :action => 'sponsors') %> |
+    <%= link_to("Schedule", :controller => 'pages', :action => 'schedule') %> |
     <%= link_to("Idea Pool", :controller => 'pages', :action => 'ideas') %>
-<!--    <%= link_to("Sponsors", :controller => 'pages', :action => 'sponsors') %> -->
+    
   </div>
   <br />
 

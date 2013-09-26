@@ -4,6 +4,7 @@ Acmhacks::Application.routes.draw do
   get '/mentors', to: 'pages#mentors'
   get '/sponsors', to: 'pages#sponsors'
   get '/ideas', to: 'pages#ideas'
+  get '/schedule', to: 'pages#schedule'
 
   root to: "pages#index"
 end
