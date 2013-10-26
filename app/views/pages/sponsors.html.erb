@@ -1,6 +1,16 @@
 <%= image_tag("sponsors.jpg", :alt => "header", :style => "width: 100%;") %>
 
-<article id ="row" class = "logos">
+<article id ="row">
+	<h3>Hardware Sponsors</h3>
+	<div class = "sponsor-image" >
+	<%= link_to(image_tag("sponsors/logo_ms.jpeg", :alt => "Microsoft"), "http://microsoft.com", :target => "_blank") %> <br />
+	</div>
+	<div class = "sponsor-image" >
+	<%= link_to(image_tag("sponsors/logo_g.png", :alt => "Google"), "https://google.com", :target => "_blank") %>
+	</div>
+
 	<h3>Special thanks</h3>
+	<div class = "sponsor-image" >
 	<%= link_to(image_tag("sponsors/opencurriculum-color-m.png", :alt => "Open Curriculum"), "http://theopencurriculum.org", :target => "_blank") %>
+	</div>
 </article>

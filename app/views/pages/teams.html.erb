@@ -1,7 +1,106 @@
 <%= image_tag("teamheader.jpg", :alt => "header", :style => "width: 100%;") %>
 
 <article id = "row">
-<h2>Team Formations</h2>
+  <h2>Teams</h2>
 
-<p>We are currently in the process of choosing teams. If you already have a team (and mentor, if desired) and haven't already registered your team, please fill out this <%= link_to "form", "http://goo.gl/RYMnaX"%>. If you are an individual without a team, please e-mail hackpluscmu@gmail.com.</p>
+<br/>
+
+<p >If you would like to contact any of the teams, please contact us at hackpluscmu@gmail.com and we will be happy to connect you. </p>
+
+<br /> <br />
+
+<div class = "eventList">
+  <% eventIndex = 0 %>
+  <div class = "event <%= cycle("evenRow", "oddRow") -%>" onClick="openClose('desc<%= eventIndex-%>')">
+    <h3>
+      <span class = "downArrow"></span> Do You Event Lift
+    </h3>
+    <p class = "desc" id = "desc<%= eventIndex-%>">
+      Team Mentor: Daniel Hasegan <br />
+      Team Members: Steffen Holm, Connor Moore, Evans Hauser, Myles Blodnick 
+      <br /> <br />
+
+      The project is to design a website that pairs users with similar workout goals and skills so they can exercise together, thus increasing motivation to work out and strengthening the CMU community (figuratively and literally). A parallel project might be to pair students that want to study together.
+      <br /><br/>
+    </p>
+    <% eventIndex += 1 %>
+    
+  </div>
+
+<div class = "event <%= cycle("evenRow", "oddRow") -%>" onClick="openClose('desc<%= eventIndex-%>')">
+    <h3>
+      <span class = "downArrow"></span> Friendr
+    </h3>
+    <p class = "desc" id = "desc<%= eventIndex-%>">
+      Team Mentor: Connie Wen, Ryan Flood
+      <br /> <br />
+
+      A cross platform mobile web app that allows CMU students to meet other interesting CMU students based on attributes beyond physical appearance! Users are presented with a list of other pseudonymous users and their attributes, and have the option of "liking" them in hopes of a return "like". If two users "like" each other, Friendr will let the users arrange a meeting via chat, and get connected!
+      <br /> <br />
+    </p>
+    <% eventIndex += 1 %>
+  </div>
+
+<div class = "event <%= cycle("evenRow", "oddRow") -%>" onClick="openClose('desc<%= eventIndex-%>')">
+    <h3>
+      <span class = "downArrow"></span> Facemoticon
+    </h3>
+    <p class = "desc" id = "desc<%= eventIndex-%>">
+      Team Mentor: Connie Wen, Ryan Flood 
+      <br /> <br />
+
+A mobile app that lets users take photos of their faces and output an ASCII emoticon into their current e-mail/fbchat/chat instead! 
+      <br /><br/>
+    </p>
+    <% eventIndex += 1 %>
+  </div>
+
+<div class = "event <%= cycle("evenRow", "oddRow") -%>" onClick="openClose('desc<%= eventIndex-%>')">
+    <h3>
+      <span class = "downArrow"></span> CatBus
+    </h3>
+    <p class = "desc" id = "desc<%= eventIndex-%>">
+      Team Mentor: Nivedita Chopra
+      <br /> <br />
+CatBus is a game with <%= link_to "Totoro", "http://en.wikipedia.org/wiki/My_Neighbor_Totoro" %> as the main character. In most respects it is similar to Mario — Totoro collects seeds like Mario collects coins. The main villains are soot-like characters called <%= link_to "Susuwatari", "http://en.wikipedia.org/wiki/Susuwatari" %>, from the Totoro movies and we are planning on adding villains from other movies as well.
+      <br /> <br/>
+    </p>
+    <% eventIndex += 1 %>
+  </div>
+
+<div class = "event <%= cycle("evenRow", "oddRow") -%>" onClick="openClose('desc<%= eventIndex-%>')">
+    <h3>
+      <span class = "downArrow"></span> Spreadsheet++
+    </h3>
+    <p class = "desc" id = "desc<%= eventIndex-%>">
+      Team Mentor: Tom Zhang <br />
+      Team Members: Rahul Manne, Wen Jay Tian, Patrick Nguyen
+      <br /> <br />
+Spreadsheets are quite useful for tracking many line items, such as spending budget or tracking maintenance. However, most spreadsheet editors for mobile are sorely lacking in features, such as formatting support, and ease of use. Our goal is to build a line-item spreadsheet app so you can easily update your budget on the go without dealing with the hassle of a full editor. We are creating a form-style UI capable of supporting any sort of line items, from budgets to workouts to grocery price lists. This app is an important and useful feature to leverage to full power of modern smartphones.
+      <br /> <br/>
+    </p>
+    <% eventIndex += 1 %>
+  </div>
+
+<div class = "event <%= cycle("evenRow", "oddRow") -%>" onClick="openClose('desc<%= eventIndex-%>')">
+    <h3>
+      <span class = "downArrow"></span> Accelerometer
+    </h3>
+    <p class = "desc" id = "desc<%= eventIndex-%>">
+      Team Mentor: Tom Zhang <br />
+      Team Members: Sunny Nahar, Justing Gallagher, Ranjani Sankaralingam, Yury Chernushenko
+      <br /> <br />
+When testing a car, it's important to have good data to validate any changes made to the vehicle's setup. Of all the data you can gather, the most strongly correlated to real-life performance are speed and acceleration. Most modern solutions for measuring these parameters either cost thousands of dollars or require a nontrivial knowledge of sensors and circuitry to homebrew. <br /> <br />
+  We plan to change that by leveraging the powerful GPS and accelerometer hardware available in any smartphone to measure acceleration and speed. As a bonus, we can also correlate speed and acceleration with location, to find out exactly where on a track the car is improving and where it loses speed. <br /> <br />
+  This app will make vehicle testing more accessible to the gearheads and enthusiasts who are interested to see how their car behaves, without spending a fortune on additional equipment.
+      <br /> <br/>
+    </p>
+    <% eventIndex += 1 %>
+  </div>
+
+</div>
+
+<br/> <br/>
+
+<p>It's not too late to join! If you already have a team (and mentor, if desired) and haven't already registered your team, please fill out this <%= link_to "form", "http://goo.gl/RYMnaX"%>. If you are an individual without a team, please e-mail hackpluscmu@gmail.com. Please keep in mind, if you are signing in late, that the deadline is November 22. </p>
 </article>
